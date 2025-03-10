@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="images/majujaya.jpg" alt="Banner web" width = "10%">
+    <h2>PT. Maju Jaya</h2>
+    <hr>
+    <a href="index.html">Home</a> | <a href="produk.html">Produk</a> | <a href="pemesanan.html">Pemesanan</a> <hr>
+    
+    <h3>Formulir Pemesanan</h3>
+    <p>Jika ingin memesan produk, silahkan isi formulir pemesanan ini dan kirimkan. Selanjutnya, untuk proses pembayaran kami akan mengirimkan total harga pesanan yang Anda pesan ke email Anda. Terima Kasih!<p>
+    
+    <form action="proses.php" method="POST">
+        <label for="Nama">Nama Lengkap</label> <br>
+        <input type="text" name="Nama" required="required" /> </br> <br>
+        <label for="tanggal">Tanggal Lahir</label> <br>
+        <input type="date" name="tanggal"> <br></br>
+        <label for="jenis">Jenis Kelamin</label> <br>
+        <input type="radio" name="jenis" value = "L" checked> Laki-Laki
+        <input type="radio" name="jenis" value = "P" checked> Perempuan <br></br>
+        <label for="pilihan">Pilihan Produk</label> <br>
+        <select name="pilihan" id="pilihan">
+            <option value="K">Kipas Angin</option>
+            <option value="R">Rice Cooker</option>
+            <option value="B">Blender</option>
+            <option value="M">Microwave</option>
+            <option value="MC">Mesin Cuci</option>
+            <option value="KL">Kulkas</option>
+            <option value="VC">Vacuum Cleaner</option>
+            <option value="D">Dispenser</option>
+            <option value="O">Oven</option>
+            <option value="S">Setrika</option>
+            <option value="TV">Televisi</option>
+            <option value="T">Toaster</option>
+            <option value="MX">Mixer</option>
+            <option value="CP">Chopper</option>
+        </select> 
+        <br></br>
+        <label for="nomor">Nomor Telepon</label> <br>
+        <input type="text" name="nomor" required="required" /> </br> <br>
+        <label for="email">Email</label> <br>
+        <input type="text" name="email" required="required" /> </br> <br>
+        <label for="alamat">Alamat</label> <br>
+        <input type="text" name="nomor" required="required" /> <br /> <br>
+        Pesan <br> 
+        <textarea name="Pesan" id="Pesan"></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
