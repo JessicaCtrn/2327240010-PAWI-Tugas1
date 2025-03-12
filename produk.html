@@ -5,30 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
 <body>
-    <img src="images/majujaya.jpg" alt="Banner web" width = "10%">
-    <h2>PT. Maju Jaya</h2>
-    <hr>
-    <a href="index.html">Home</a> | <a href="produk.html">Produk</a> | <a href="pemesanan.html">Pemesanan</a> <hr>
-    <h4>Terdapat banyak peralatan elektronik rumah tangga yang memiliki kualitas tinggi yang ramah lingkungan dan design-design yang tidak kalah menarik untuk memenuhi kebutuhan rumah tangga modern.</h4>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+        <img src="images/majujaya-removebg-preview.png" alt="Banner web" width = "10%">
+          <a class="navbar-brand" href="#">PT. Maju Jaya</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pemesanan.html">Pemesanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hubungi.html">Hubungi Kami</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class = "container">
+<!-- carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/blender.jpg" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/kipas.webp" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/rice.jpg" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/micro.webp" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/cuci.jpg" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/kulkas.jpg" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/vacum.webp" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/dis.webp" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/ove.webp" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/set.jpg" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/teve.webp" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/toast.webp" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/mix.jpg" class="d-block w-50" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/chop.jpg" class="d-block w-50" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br><br>
+    <h4>Terdapat banyak peralatan elektronik rumah tangga yang memiliki kualitas tinggi yang ramah lingkungan dan design-design yang tidak kalah menarik untuk memenuhi kebutuhan rumah tangga modern.</h4> <br>
     <h4>Berikut kami lampirkan produk-produknya :</h4>
     
-    <table border = "1">
-        <!-- baris -->
-         <tr>
-            <!-- kolom -->
-            <tr>
-                <th>Nama Produk</th>
-                <th>Harga</th>
-                <th>Fitur Utama</th>
-            </tr>
-         </tr>
-         <tr>
+    <table border = "2">
+      <table class="table table-bordered">
+        <tr>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+            <th>Fitur Utama</th>
+        </tr>
+        <tr>
             <td>Kipas Angin</td>
             <td>Rp 1.000.000</td>
             <td>Meningkatkan sirkulasi udara</td>
-         </tr>
+        </tr>
          <tr>
             <td>Rice Cooker</td>
             <td>Rp 950.000</td>
@@ -94,7 +171,8 @@
             <td>Rp 990.999</td>
             <td>Mencincang bahan makanan seperti daging ayam, sapi ataupun sayur-sayuran agar lebih mudah saat proses memasak</td>
         </tr>
-     </table>
+    </table>
+  </table>
      
      <h3>Keunggulan Produk</h3>
      <ol type="1.">
@@ -115,5 +193,25 @@
         <li>Konsultasi Produk – Memberikan rekomendasi produk sesuai kebutuhan pelanggan.</li>
         <li>Program Daur Ulang – Menerima produk lama untuk didaur ulang demi mendukung keberlanjutan lingkungan.</li>
     </ol>
+
+    <h3>Penawaran Terbatas</h3>
+<div class = "row">
+<div class = "col-lg-3">
+<div class="card bg-body-tertiary">
+    <img src="images/sale.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Diskon 30%</h5>
+      <p class="card-text">Dapatkan diskon sebesar 30% untuk semua peralatan elektronik! 🔥 <br>
+        Hanya berlaku hari ini dan terbatas untuk 5 pembeli pertama! <br>
+        Jangan sampai kehabisan, segera beli sekarang! 🤩✨</p>
+      <a href="#" class="btn btn-warning">Lihat produk</a>
+    </div>
+
+    </div>
+  </div>
+  <div class = "col-lg-3"></div>
+</div>
+</div>
+
 </body>
 </html>

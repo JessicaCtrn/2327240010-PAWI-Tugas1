@@ -3,7 +3,6 @@
 }
 body{
     background-color: white;
-    font-family: times new roman;
 }
 
 a{
@@ -23,7 +22,7 @@ input[type="text"], input[type="date"], textarea, select {
     width: 100%;
     border-radius: 8px;
     padding: 5px;
-    border: 1px dotted black;
+    border: 1px dotted blue;
 }
 button{
     border-radius: 10px;
@@ -33,3 +32,6 @@ button{
     padding: 5px;
     width: 10%;
 }
+
+
+
